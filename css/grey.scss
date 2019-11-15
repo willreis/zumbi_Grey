@@ -1,18 +1,49 @@
+/*Mixin*/
+
+@mixin title-block-mix {
+    color: $black;
+    font-size: 44px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+/*Colors*/
+
+$black: #000000;
+$red: #ef031f;
+$white: #ffffff;
+
+/*Geral*/
+
+.position-relative {
+    position: relative;
+}
+
+
+/*content*/
+
 body {
     font-family: 'Poppins', sans-serif;
+    background: #d4d4d4;
 }
 
 header {
+    background: url('../img/bg-header.jpg');
+    background-size: cover;
+    background-position: center center;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px 0 20px 0;
+    height: 100vh;
     a {
         font-size: 20px;
         font-weight: bold;
-        color: #fff;
+        color: $white;
         padding: 0;
     }
     ul {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px 0 20px 0;
         li {
             a.nav-link {
                 padding-bottom: 2px;
@@ -22,6 +53,127 @@ header {
                 color: red;
                 border-bottom: 1px solid red;
             }
+        }
+    }
+}
+
+.title-block {
+    @include title-block-mix;
+    margin-top: 180px;
+    padding-left: 34px;
+}
+
+.title-block-background {
+    @include title-block-mix;
+    background: $red;
+    padding-left: 34px;
+    margin-top: 60px;
+}
+
+.first-box {
+    margin-top: 80px
+}
+
+.arrow-space {
+    width: 20%;
+    img {
+        width: 100%;
+        padding-right: 22px;
+    }
+}
+
+.text-explain {
+    font-size: 18px;
+    color: $black;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+
+.sec-box {
+    width: 80%;
+}
+
+.position-box {
+    left: 13%;
+    z-index: 99;
+    top: 16%;
+}
+
+img.star-pict {
+    margin: 240px 0 0 168px;
+}
+
+.box-battle-exp {
+    margin-top: 90px;
+}
+
+.img-battle-box {
+    img:first-child {
+        text-align: right;
+    }
+    text-align:center;
+}
+
+.sec-box-text {
+    padding: 0 18px;
+    margin-top: 90px;
+}
+
+.img-star-sec {
+    margin-top: 50px;
+}
+
+.text-exp-third {
+    padding-left: 40px;
+}
+
+.box-third {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.zumbi-resiste {
+    background: $red;
+    padding-bottom: 120px;
+    .bg-zumbi-resiste {
+        background: url('../img/bg-zumbi-resiste.png');
+        background-position: top center;
+        background-size: cover;
+        width: 100%;
+        height: 420px;
+    }
+    .text-memory {
+        @include title-block-mix;
+        margin-top: 100px;
+    }
+    .memory-date {
+        color: $white;
+        font-size: 44px;
+        font-weight: 800;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .address-memory {
+        color: $white;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .event-day {
+        margin-top: 80px;
+        span:first-child {
+            background: $black;
+            color: $white;
+            padding: 10px;
+            text-align: center;
+            border: none;
+        }
+        span {
+            font-size: 32px;
+            border-bottom: 1px solid $white;
+            font-weight: 800;
+            text-transform: uppercase;
         }
     }
 }
