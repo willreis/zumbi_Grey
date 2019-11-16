@@ -7,17 +7,38 @@
     text-transform: uppercase;
 }
 
+@mixin text-upfooter {
+    color: $white;
+    text-transform: uppercase;
+    width: 570px;
+    line-height: 1.5;
+}
+
 
 /*Colors*/
 
 $black: #000000;
 $red: #ef031f;
 $white: #ffffff;
+$footer-bg: #131313;
+$cor-nav: #ffffff;
 
 /*Geral*/
 
 .position-relative {
     position: relative;
+}
+
+.bg-black {
+    background: $black;
+}
+
+.padding-left-0 {
+    padding-left: 0;
+}
+
+.width-img-desktop {
+    width: 60px;
 }
 
 
@@ -29,29 +50,39 @@ body {
 }
 
 header {
-    background: url('../img/bg-header.jpg');
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 100vh;
+    .bg-header {
+        background: url('../img/bg-header.jpg');
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100vh;
+    }
     a {
         font-size: 20px;
         font-weight: bold;
-        color: $white;
+        color: $white!important;
         padding: 0;
+    }
+    a.nav-link.active {
+        color: #ffffff!important;
     }
     ul {
         width: 100%;
         background: rgba(0, 0, 0, 0.8);
         padding: 10px 0 20px 0;
         li {
+            color: #fff;
             a.nav-link {
+                color: #ffffff;
                 padding-bottom: 2px;
             }
             padding: 0;
             .active {
-                color: red;
-                border-bottom: 1px solid red;
+                color: $cor-nav;
+                border-bottom: 1px solid $cor-nav;
+            }
+             :hover {
+                color: $cor-nav;
             }
         }
     }
@@ -68,6 +99,7 @@ header {
     background: $red;
     padding-left: 34px;
     margin-top: 60px;
+    padding-right: 15px;
 }
 
 .first-box {
@@ -88,6 +120,7 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.8;
+    margin-left: 24px;
 }
 
 .sec-box {
@@ -126,6 +159,7 @@ img.star-pict {
 
 .text-exp-third {
     padding-left: 40px;
+    margin-top: 78px;
 }
 
 .box-third {
@@ -135,7 +169,7 @@ img.star-pict {
 
 .zumbi-resiste {
     background: $red;
-    padding-bottom: 120px;
+    padding-bottom: 180px;
     .bg-zumbi-resiste {
         background: url('../img/bg-zumbi-resiste.png');
         background-position: top center;
@@ -165,7 +199,7 @@ img.star-pict {
         span:first-child {
             background: $black;
             color: $white;
-            padding: 10px;
+            padding: 10px 10px 15px 10px;
             text-align: center;
             border: none;
         }
@@ -175,5 +209,291 @@ img.star-pict {
             font-weight: 800;
             text-transform: uppercase;
         }
+    }
+}
+
+.subfooter {
+    padding: 180px 0;
+    .text-abaixo-assinado {
+        p:first-child {
+            @include text-upfooter;
+            font-size: 44px;
+        }
+        p:nth-child(2) {
+            @include text-upfooter;
+            font-size: 18px;
+            margin-top: 50px;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    .btn-assinar {
+        width: 350px;
+        width: 270px;
+        background: $red;
+        text-align: center;
+        padding: 5px 0;
+        margin-top: 50px;
+        span {
+            color: $black;
+            font-weight: bold;
+            border-bottom: 1px solid $black;
+            font-size: 25px;
+            margin: 0 10px;
+        }
+        img {
+            width: 60px
+        }
+    }
+}
+
+footer {
+    padding: 30px 0;
+    background: $footer-bg;
+    text-align: center;
+    ul {
+        margin-bottom: 0;
+        li {
+            margin-right: 30px;
+            display: inline;
+            a {
+                text-decoration: none;
+                i {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+
+/*MOBILE*/
+
+@media screen and (max-width: 768px) {
+    /*Geral*/
+    .mobile-disable {
+        display: none
+    }
+    .mob-padding-0 {
+        padding: 0;
+    }
+    .margin-top-50 {
+        margin-top: 50px;
+    }
+    .margin-bottom-30 {
+        margin-bottom: 30px;
+    }
+    .margin-top-30 {
+        margin-top: 30px;
+    }
+    .mob-width-100 {
+        width: 100%;
+    }
+    .width-img-desktop {
+        width: 40px;
+    }
+    /*Mixin*/
+    @mixin title-block-mix {
+        color: $black;
+        font-size: 34px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    @mixin text-upfooter {
+        color: $white;
+        text-transform: uppercase;
+        line-height: 1.5;
+        width: 86%;
+    }
+    /*Conteudo*/
+    .bg-light {
+        background-color: transparent!important;
+        z-index: 99999;
+        position: fixed;
+        padding: 0;
+        border: 0;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        border: 0;
+        text-align: right;
+    }
+    ul.navbar-nav.fixed-top.justify-content-center {
+        padding-top: 45px;
+        text-align: center;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+        width: 100%;
+    }
+    header {
+        .nav {
+            width: 100%;
+        }
+        button.navbar-toggler {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 99999;
+        }
+        .bg-header {
+            background: url('../img/bg-header-mob.png');
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 60vh;
+        }
+        a {
+            font-size: 20px;
+            font-weight: bold;
+            color: $white;
+            padding: 0;
+        }
+        ul {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0 20px 0;
+            li {
+                a.nav-link {
+                    padding-bottom: 2px;
+                }
+                padding: 0 90px;
+                margin-top: 10px;
+                .active {
+                    color: $cor-nav;
+                    border-bottom: 1px solid $cor-nav;
+                }
+                 :hover {
+                    color: $cor-nav;
+                }
+            }
+        }
+    }
+    .title-block {
+        @include title-block-mix;
+        margin-top: 50px;
+        padding: 0 23px;
+    }
+    .justice-text {
+        padding-left: 24px;
+        .title-block-background {
+            @include title-block-mix;
+            background: $red;
+            margin-top: 60px;
+            line-height: 1.8;
+            padding-left: 0;
+        }
+    }
+    .zumbi-img {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .first-box {
+        margin-top: 50px
+    }
+    .position-box {
+        left: 24px;
+        top: 0;
+    }
+    .box-battle-exp {
+        margin-top: 0;
+    }
+    .text-exp-third {
+        padding: 0 24px;
+        margin-top: 0px;
+    }
+    .box-third {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .text-memory {
+        @include title-block-mix;
+        margin-top: 100px;
+    }
+    .zumbi-resiste {
+        padding-bottom: 80px;
+        .bg-zumbi-resiste {
+            background: url('../img/bg-zumbi-resiste-mob.png');
+            background-position: top center;
+            background-size: cover;
+            width: 100%;
+            height: 180px;
+        }
+        .text-memory {
+            @include title-block-mix;
+            margin-top: 50px;
+        }
+        .memory-date {
+            color: $white;
+            font-size: 34px;
+            font-weight: 800;
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+        .address-memory {
+            color: $white;
+            font-size: 17px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .event-day {
+            margin-top: 80px;
+            span:first-child {
+                background: $black;
+                color: $white;
+                padding: 10px 10px 15px 10px;
+                text-align: center;
+                border: none;
+            }
+            span {
+                font-size: 17px;
+                border-bottom: 1px solid $white;
+                font-weight: 800;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .subfooter {
+        padding: 80px 0;
+        .text-abaixo-assinado {
+            p:first-child {
+                @include text-upfooter;
+                font-size: 34px;
+                padding-left: 24px;
+            }
+            p:nth-child(2) {
+                @include text-upfooter;
+                font-size: 18px;
+                margin-top: 50px;
+                padding-left: 24px;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+        .btn-assinar {
+            width: 170px;
+            background: $red;
+            text-align: center;
+            padding: 5px 0;
+            margin-top: 50px;
+            margin-left: 24px;
+            span {
+                color: $black;
+                font-weight: bold;
+                border-bottom: 1px solid $black;
+                font-size: 16px;
+                margin: 0 10px;
+            }
+            img {
+                width: 30px
+            }
+        }
+    }
+}
+
+@media screen and (min-width:769px) {
+    .desktop-disable {
+        display: none;
     }
 }

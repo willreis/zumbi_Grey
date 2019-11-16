@@ -4,33 +4,48 @@
 .position-relative {
   position: relative; }
 
+.bg-black {
+  background: #000000; }
+
+.padding-left-0 {
+  padding-left: 0; }
+
+.width-img-desktop {
+  width: 60px; }
+
 /*content*/
 body {
   font-family: 'Poppins', sans-serif;
   background: #d4d4d4; }
 
-header {
+header .bg-header {
   background: url("../img/bg-header.jpg");
   background-size: cover;
   background-position: center center;
   width: 100%;
   height: 100vh; }
-  header a {
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
+header a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff !important;
+  padding: 0; }
+header a.nav-link.active {
+  color: #ffffff !important; }
+header ul {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 0 20px 0; }
+  header ul li {
+    color: #fff;
     padding: 0; }
-  header ul {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px 0 20px 0; }
-    header ul li {
-      padding: 0; }
-      header ul li a.nav-link {
-        padding-bottom: 2px; }
-      header ul li .active {
-        color: red;
-        border-bottom: 1px solid red; }
+    header ul li a.nav-link {
+      color: #ffffff;
+      padding-bottom: 2px; }
+    header ul li .active {
+      color: #ffffff;
+      border-bottom: 1px solid #ffffff; }
+    header ul li :hover {
+      color: #ffffff; }
 
 .title-block {
   color: #000000;
@@ -47,7 +62,8 @@ header {
   text-transform: uppercase;
   background: #ef031f;
   padding-left: 34px;
-  margin-top: 60px; }
+  margin-top: 60px;
+  padding-right: 15px; }
 
 .first-box {
   margin-top: 80px; }
@@ -63,7 +79,8 @@ header {
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.8; }
+  line-height: 1.8;
+  margin-left: 24px; }
 
 .sec-box {
   width: 80%; }
@@ -92,7 +109,8 @@ img.star-pict {
   margin-top: 50px; }
 
 .text-exp-third {
-  padding-left: 40px; }
+  padding-left: 40px;
+  margin-top: 78px; }
 
 .box-third {
   margin-top: 50px;
@@ -100,7 +118,7 @@ img.star-pict {
 
 .zumbi-resiste {
   background: #ef031f;
-  padding-bottom: 120px; }
+  padding-bottom: 180px; }
   .zumbi-resiste .bg-zumbi-resiste {
     background: url("../img/bg-zumbi-resiste.png");
     background-position: top center;
@@ -129,7 +147,7 @@ img.star-pict {
     .zumbi-resiste .event-day span:first-child {
       background: #000000;
       color: #ffffff;
-      padding: 10px;
+      padding: 10px 10px 15px 10px;
       text-align: center;
       border: none; }
     .zumbi-resiste .event-day span {
@@ -137,5 +155,256 @@ img.star-pict {
       border-bottom: 1px solid #ffffff;
       font-weight: 800;
       text-transform: uppercase; }
+
+.subfooter {
+  padding: 180px 0; }
+  .subfooter .text-abaixo-assinado p:first-child {
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 570px;
+    line-height: 1.5;
+    font-size: 44px; }
+  .subfooter .text-abaixo-assinado p:nth-child(2) {
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 570px;
+    line-height: 1.5;
+    font-size: 18px;
+    margin-top: 50px; }
+  .subfooter .text-abaixo-assinado a {
+    text-decoration: none; }
+  .subfooter .btn-assinar {
+    width: 350px;
+    width: 270px;
+    background: #ef031f;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 50px; }
+    .subfooter .btn-assinar span {
+      color: #000000;
+      font-weight: bold;
+      border-bottom: 1px solid #000000;
+      font-size: 25px;
+      margin: 0 10px; }
+    .subfooter .btn-assinar img {
+      width: 60px; }
+
+footer {
+  padding: 30px 0;
+  background: #131313;
+  text-align: center; }
+  footer ul {
+    margin-bottom: 0; }
+    footer ul li {
+      margin-right: 30px;
+      display: inline; }
+      footer ul li a {
+        text-decoration: none; }
+        footer ul li a i {
+          color: #ffffff; }
+
+/*MOBILE*/
+@media screen and (max-width: 768px) {
+  /*Geral*/
+  .mobile-disable {
+    display: none; }
+
+  .mob-padding-0 {
+    padding: 0; }
+
+  .margin-top-50 {
+    margin-top: 50px; }
+
+  .margin-bottom-30 {
+    margin-bottom: 30px; }
+
+  .margin-top-30 {
+    margin-top: 30px; }
+
+  .mob-width-100 {
+    width: 100%; }
+
+  .width-img-desktop {
+    width: 40px; }
+
+  /*Mixin*/
+  /*Conteudo*/
+  .bg-light {
+    background-color: transparent !important;
+    z-index: 99999;
+    position: fixed;
+    padding: 0;
+    border: 0; }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    border: 0;
+    text-align: right; }
+
+  ul.navbar-nav.fixed-top.justify-content-center {
+    padding-top: 45px;
+    text-align: center; }
+
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    width: 100%; }
+
+  header .nav {
+    width: 100%; }
+  header button.navbar-toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99999; }
+  header .bg-header {
+    background: url("../img/bg-header-mob.png");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 60vh; }
+  header a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 0; }
+  header ul {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0 20px 0; }
+    header ul li {
+      padding: 0 90px;
+      margin-top: 10px; }
+      header ul li a.nav-link {
+        padding-bottom: 2px; }
+      header ul li .active {
+        color: #ffffff;
+        border-bottom: 1px solid #ffffff; }
+      header ul li :hover {
+        color: #ffffff; }
+
+  .title-block {
+    color: #000000;
+    font-size: 34px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 50px;
+    padding: 0 23px; }
+
+  .justice-text {
+    padding-left: 24px; }
+    .justice-text .title-block-background {
+      color: #000000;
+      font-size: 34px;
+      font-weight: 800;
+      text-transform: uppercase;
+      background: #ef031f;
+      margin-top: 60px;
+      line-height: 1.8;
+      padding-left: 0; }
+
+  .zumbi-img {
+    width: 100%;
+    margin-top: 30px; }
+
+  .first-box {
+    margin-top: 50px; }
+
+  .position-box {
+    left: 24px;
+    top: 0; }
+
+  .box-battle-exp {
+    margin-top: 0; }
+
+  .text-exp-third {
+    padding: 0 24px;
+    margin-top: 0px; }
+
+  .box-third {
+    margin-top: 50px;
+    margin-bottom: 100px; }
+
+  .text-memory {
+    color: #000000;
+    font-size: 34px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 100px; }
+
+  .zumbi-resiste {
+    padding-bottom: 80px; }
+    .zumbi-resiste .bg-zumbi-resiste {
+      background: url("../img/bg-zumbi-resiste-mob.png");
+      background-position: top center;
+      background-size: cover;
+      width: 100%;
+      height: 180px; }
+    .zumbi-resiste .text-memory {
+      color: #000000;
+      font-size: 34px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-top: 50px; }
+    .zumbi-resiste .memory-date {
+      color: #ffffff;
+      font-size: 34px;
+      font-weight: 800;
+      margin-top: 30px;
+      margin-bottom: 0; }
+    .zumbi-resiste .address-memory {
+      color: #ffffff;
+      font-size: 17px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .zumbi-resiste .event-day {
+      margin-top: 80px; }
+      .zumbi-resiste .event-day span:first-child {
+        background: #000000;
+        color: #ffffff;
+        padding: 10px 10px 15px 10px;
+        text-align: center;
+        border: none; }
+      .zumbi-resiste .event-day span {
+        font-size: 17px;
+        border-bottom: 1px solid #ffffff;
+        font-weight: 800;
+        text-transform: uppercase; }
+
+  .subfooter {
+    padding: 80px 0; }
+    .subfooter .text-abaixo-assinado p:first-child {
+      color: #ffffff;
+      text-transform: uppercase;
+      line-height: 1.5;
+      width: 86%;
+      font-size: 34px;
+      padding-left: 24px; }
+    .subfooter .text-abaixo-assinado p:nth-child(2) {
+      color: #ffffff;
+      text-transform: uppercase;
+      line-height: 1.5;
+      width: 86%;
+      font-size: 18px;
+      margin-top: 50px;
+      padding-left: 24px; }
+    .subfooter .text-abaixo-assinado a {
+      text-decoration: none; }
+    .subfooter .btn-assinar {
+      width: 170px;
+      background: #ef031f;
+      text-align: center;
+      padding: 5px 0;
+      margin-top: 50px;
+      margin-left: 24px; }
+      .subfooter .btn-assinar span {
+        color: #000000;
+        font-weight: bold;
+        border-bottom: 1px solid #000000;
+        font-size: 16px;
+        margin: 0 10px; }
+      .subfooter .btn-assinar img {
+        width: 30px; } }
+@media screen and (min-width: 769px) {
+  .desktop-disable {
+    display: none; } }
 
 /*# sourceMappingURL=grey.css.map */

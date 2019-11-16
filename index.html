@@ -4,7 +4,7 @@
 <head>
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -13,35 +13,50 @@
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,500,600,700,800,900&display=swap" rel="stylesheet">
 
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <title>Olá, mundo!</title>
 </head>
 
-<body>
-    <header class="text-center">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">HISTÓRIA</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">EVENTO</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">ABAIXO-ASSINADO</a>
-            </li>
-        </ul>
+<body id="home">
+    <header>
+        <div class="container-fluid bg-header">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav fixed-top justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#home">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#historia">HISTÓRIA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#evento">EVENTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#abaixo-assinado">ABAIXO-ASSINADO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
     </header>
-    <section>
+    <section id="historia">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 offset-md-1">
+                <div class="col-md-10 offset-md-1 col-sm-12">
                     <p class="title-block">
                         Jorge Velho ordenou a morte de Zumbi dos Palmares e hoje seu nome é homenageado com uma rua.
                     </p>
-                    <p class="title-block-background">
-                        É hora de fazer justiça com zumbi
+                    <p class="justice-text">
+                        <span class="title-block-background"> É hora de fazer justiça com zumbi</span>
                     </p>
                 </div>
             </div>
@@ -50,9 +65,9 @@
     <section>
         <div class="container-fluid">
             <div class="row first-box">
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="position-relative position-box">
-                        <div class="arrow-space float-left">
+                        <div class="arrow-space float-left mobile-disable">
                             <img src="img/arrow.png" alt="">
                         </div>
                         <div class="sec-box float-left">
@@ -62,19 +77,19 @@
                             <p class="text-explain">
                                 Um dos perseguidores de Zumbi foi Domingos Jorge Velho, que comandou diversos ataques ao Quilombo dos Palmares, usando métodos altamente brutais na perseguição de pessoas negras.
                             </p>
-                            <img class="star-pict" src="img/star.png" alt="">
+                            <img class="mobile-disable" class="star-pict" src="img/star.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="img/zumbi.png" alt="Foto de Zumbi dos Palmares">
+                <div class="col-md-6 col-sm-12 mob-padding-0">
+                    <img class="zumbi-img" src="img/zumbi.png" alt="Foto de Zumbi dos Palmares">
                 </div>
             </div>
     </section>
     <section>
         <div class="container">
             <div class="row box-battle-exp">
-                <div class="col-md-5 offset-md-1 align-right img-battle-box">
+                <div class="col-md-5 offset-md-1 col-sm-12 align-right img-battle-box mobile-disable">
                     <img src="img/battle.png" alt="Batalha de Zumbi">
                     <img class="img-star-sec" src="img/star.png" alt="">
                 </div>
@@ -84,29 +99,40 @@
                         seu esconderijo e assassinado pelas tropas de Jorge Velho.
                     </p>
                 </div>
+                <div class="col-md-5 offset-md-1 col-sm-12 align-right img-battle-box desktop-disable mob-padding-0 margin-top-50">
+                    <figure class="desktop-disable margin-bottom-30">
+                        <img src="img/star.png" alt="">
+                    </figure>
+                    <img class="mob-width-100" src="img/battle.png" alt="Batalha de Zumbi">
+
+                    <figure class="desktop-disable margin-top-30">
+                        <img src="img/star.png" alt="">
+                    </figure>
+                    <img class="img-star-sec mobile-disable" src="img/star.png" alt="">
+                </div>
             </div>
         </div>
     </section>
     <section>
         <div class="container">
             <div class="row box-third">
-                <div class="col-md-6 offset-md-1">
+                <div class="col-md-6  offset-md-1 col-sm-12">
                     <p class="text-explain text-exp-third">
                         Hoje, vamos lutar para tirar Jorge Velho da história e homenagear quem realmente merece: Zumbi dos Palmares. Como faremos isso? No dia 23/11, a rua Jorge Velho será ocupada e faremos pressão sobre as autoridades, exigindo a mudança de nome.
                     </p>
                 </div>
-                <div class="col-md-4">
-                    <img src="img/placa-rua.png" alt="Placa Rua Jorge Velho">
+                <div class="col-md-4 col-sm-12 mob-padding-0">
+                    <img class="mob-width-100" src="img/placa-rua.png" alt="Placa Rua Jorge Velho">
                 </div>
             </div>
         </div>
     </section>
     <section class="zumbi-resiste">
         <div class="container-fluid bg-zumbi-resiste"></div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="evento">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-8 offset-md-1">
+                    <div class="col-md-8 offset-md-2 col-sm-12">
                         <p class="text-memory">
                             Faça parte dessa ocupação histórica e nos ajude a lutar pela memória de Zumbi dos Palmares.
                         </p>
@@ -115,21 +141,80 @@
                         </p>
                         <p class="address-memory">rua jorge velho - bom retiro/luz</p>
                         <div class="event-day">
-                            <span>
-                                <img width="60" src="img/white-star.png" alt="">
-                                <span>Confirmar Presença</span>
-                            <img width="60" src="img/white-star.png" alt="">
-                            </span>
+                            <a href="#" target="blank" style="text-decoration:none">
+                                <span>
+                                    <img class="width-img-desktop" src="img/white-star.png" alt="">
+                                    <span>Confirmar Presença</span>
+                                <img class="width-img-desktop" src="img/white-star.png" alt="">
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <section id="abaixo-assinado">
+        <div class="container-fluid bg-black">
+            <div class="row subfooter">
+                <div class="col-md-2 padding-left-0 mobile-disable">
+                    <img src="img/white-arrow.png" alt="">
+                </div>
+                <div class="col-md-10 col-sm-12 text-abaixo-assinado">
+                    <p>Todo mundo pode fazer parte dessa luta.</p>
+                    <p>Assine este abaixo-assinado e nos ajude a corrigir uma homenagem injusta, feita para um dos maiores genocidas da história brasileira.</p>
+
+                    <div class="btn-assinar">
+                        <a href="#" target="blank">
+                            <img src="img/star.png" alt="">
+                            <span>ASSINAR</span>
+                            <img src="img/star.png" alt="">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <ul>
+                        <li style="display:none"><img src="img/logo-zumbi.png" alt="Logo faculdade Zumbi dos Palmares"></li>
+                        <li><a href="#" target="blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" target="blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" target="blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+    <script>
+        $(function() {
+            $('a').click(function() {
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 1500);
+                return false;
+            });
+        });
+
+        $(function() {
+            $('ul li a').click(function(i) {
+                $('ul li a').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+        $(function() {
+            $(".nav-link").on("click", function() {
+                $('.navbar-collapse').collapse('hide');
+            });
+        });
+    </script>
 </body>
 
 </html>
