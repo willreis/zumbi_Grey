@@ -242,8 +242,9 @@ footer {
     text-align: right; }
 
   ul.navbar-nav.fixed-top.justify-content-center {
-    padding-top: 45px;
-    text-align: center; }
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 80px; }
 
   nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     width: 100%; }
@@ -262,7 +263,7 @@ footer {
     width: 100%;
     height: 60vh; }
   header a {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     color: #ffffff;
     padding: 0; }
@@ -271,7 +272,7 @@ footer {
     background: rgba(0, 0, 0, 0.8);
     padding: 10px 0 20px 0; }
     header ul li {
-      padding: 0 90px;
+      padding: 0 70px;
       margin-top: 10px; }
       header ul li a.nav-link {
         padding-bottom: 2px; }
@@ -283,7 +284,7 @@ footer {
 
   .title-block {
     color: #000000;
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 800;
     text-transform: uppercase;
     margin-top: 50px;
@@ -293,13 +294,20 @@ footer {
     padding-left: 24px; }
     .justice-text .title-block-background {
       color: #000000;
-      font-size: 34px;
+      font-size: 32px;
       font-weight: 800;
       text-transform: uppercase;
       background: #ef031f;
       margin-top: 60px;
       line-height: 1.8;
       padding-left: 0; }
+
+  .text-explain {
+    margin-left: 0px; }
+
+  .sec-box-text {
+    padding: 0 18px 0 24px;
+    margin-top: 90px; }
 
   .zumbi-img {
     width: 100%;
@@ -325,7 +333,7 @@ footer {
 
   .text-memory {
     color: #000000;
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 800;
     text-transform: uppercase;
     margin-top: 100px; }
@@ -340,7 +348,7 @@ footer {
       height: 180px; }
     .zumbi-resiste .text-memory {
       color: #000000;
-      font-size: 34px;
+      font-size: 32px;
       font-weight: 800;
       text-transform: uppercase;
       margin-top: 50px; }
@@ -364,7 +372,7 @@ footer {
         text-align: center;
         border: none; }
       .zumbi-resiste .event-day span {
-        font-size: 17px;
+        font-size: 16px;
         border-bottom: 1px solid #ffffff;
         font-weight: 800;
         text-transform: uppercase; }
