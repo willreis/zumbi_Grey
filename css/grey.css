@@ -94,7 +94,7 @@ img.star-pict {
   margin: 190px 0 0 168px; }
 
 .box-battle-exp {
-  margin-top: 90px; }
+  margin-top: 0; }
 
 .img-battle-box {
   text-align: center; }
@@ -103,7 +103,10 @@ img.star-pict {
 
 .sec-box-text {
   padding: 0 18px;
-  margin-top: 90px; }
+  margin-top: 220px; }
+
+.img-star-sec-one {
+  margin-bottom: 50px; }
 
 .img-star-sec {
   margin-top: 50px; }
