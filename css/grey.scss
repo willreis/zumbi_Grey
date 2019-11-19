@@ -134,7 +134,7 @@ header {
 }
 
 img.star-pict {
-    margin: 240px 0 0 168px;
+    margin: 190px 0 0 168px;
 }
 
 .box-battle-exp {
@@ -190,12 +190,13 @@ img.star-pict {
     }
     .address-memory {
         color: $white;
-        font-size: 18px;
+        font-size: 40px;
         font-weight: bold;
         text-transform: uppercase;
+        margin-top: 60px;
     }
     .event-day {
-        margin-top: 80px;
+        margin-top: 120px;
         span:first-child {
             background: $black;
             color: $white;
@@ -218,11 +219,13 @@ img.star-pict {
         p:first-child {
             @include text-upfooter;
             font-size: 44px;
+            font-weight: 800;
         }
         p:nth-child(2) {
             @include text-upfooter;
             font-size: 18px;
             margin-top: 50px;
+            font-weight: 800;
         }
         a {
             text-decoration: none;
@@ -440,7 +443,7 @@ footer {
         }
         .address-memory {
             color: $white;
-            font-size: 17px;
+            font-size: 34px;
             font-weight: bold;
             text-transform: uppercase;
         }

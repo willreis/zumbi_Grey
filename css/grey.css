@@ -91,7 +91,7 @@ header ul {
   top: 16%; }
 
 img.star-pict {
-  margin: 240px 0 0 168px; }
+  margin: 190px 0 0 168px; }
 
 .box-battle-exp {
   margin-top: 90px; }
@@ -139,11 +139,12 @@ img.star-pict {
     margin-bottom: 0; }
   .zumbi-resiste .address-memory {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 40px;
     font-weight: bold;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-top: 60px; }
   .zumbi-resiste .event-day {
-    margin-top: 80px; }
+    margin-top: 120px; }
     .zumbi-resiste .event-day span:first-child {
       background: #000000;
       color: #ffffff;
@@ -163,14 +164,16 @@ img.star-pict {
     text-transform: uppercase;
     width: 570px;
     line-height: 1.5;
-    font-size: 44px; }
+    font-size: 44px;
+    font-weight: 800; }
   .subfooter .text-abaixo-assinado p:nth-child(2) {
     color: #ffffff;
     text-transform: uppercase;
     width: 570px;
     line-height: 1.5;
     font-size: 18px;
-    margin-top: 50px; }
+    margin-top: 50px;
+    font-weight: 800; }
   .subfooter .text-abaixo-assinado a {
     text-decoration: none; }
   .subfooter .btn-assinar {
@@ -360,7 +363,7 @@ footer {
       margin-bottom: 0; }
     .zumbi-resiste .address-memory {
       color: #ffffff;
-      font-size: 17px;
+      font-size: 34px;
       font-weight: bold;
       text-transform: uppercase; }
     .zumbi-resiste .event-day {
